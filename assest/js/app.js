@@ -6,11 +6,11 @@ var arr= [ { nombre : "Arabela", apellido : "Rojas", rol : "T.A", cumpleanios : 
 
   var resultado="";
 function imprimirTodo(){
-  for(var caract in arr){
-    resultado += "<li> Nombre: " + arr[caract].nombre + "<br>" +
-                  "<li> Apellido: " + arr[caract].apellido + "<br>" +
-                  "<li> Rol: " + arr[caract].rol + "<br>" +
-                  "<li> Cumpleaños: " + arr[caract].cumpleanios + "<br>" + "<br>";
+  for(var c in arr){
+    resultado += "<li> Nombre: " + arr[c].nombre + "<br>" +
+                  "<li> Apellido: " + arr[c].apellido + "<br>" +
+                  "<li> Rol: " + arr[c].rol + "<br>" +
+                  "<li> Cumpleaños: " + arr[c].cumpleanios + "<br>" + "<br>";
   }
   document.getElementById("imprimir").innerHTML= resultado;
   }
